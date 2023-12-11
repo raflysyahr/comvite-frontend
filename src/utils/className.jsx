@@ -1,0 +1,1 @@
+export default function className(...classes){ return classes.filter(Boolean).join(' ')}

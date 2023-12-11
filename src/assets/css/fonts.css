@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Var.woff2);
+}
+
+@font-face {
+  font-family: Lyon;
+  src: url(../fonts/LyonText-Regular-Web.woff2);
+}
+
+
+
+@font-face {
+    font-family: Inter-bold;
+    src: url(../fonts/Inter/static/Inter-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Inter-regular;
+    src: url(../fonts/Inter/static/Inter-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Inter-exbold;
+    src: url(../fonts/Inter/static/Inter-ExtraBold.ttf);
+  }
+  
+  @font-face {
+    font-family: Inter-thin;
+    src: url(../fonts/Inter/static/Inter-Thin.ttf);
+  }
+  
+.inter-thin{
+    font-family: Inter-thin;
+}
+  
+.inter-exbold{
+    font-family: Inter-exbold;
+}
+  
+.inter-bold{
+    font-family: Inter-bold;
+}
+  
+
+.Inter { font-family:Inter; }
+.Lyon { font-family:Lyon; }

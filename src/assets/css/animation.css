@@ -1,0 +1,58 @@
+/* Blink cursor animation */
+@keyframes blink {
+    from {
+        border-color:transparent
+    }
+    to{
+        border-color:white;
+    }
+}
+
+.blink {
+    animation :blink 0s linear infinite; /* cubic-bezier(0, -0.16, 0.79, 0.42) infinite;*/
+/*    animation-delay:1s;*/
+}
+
+
+@keyframes switch-navigation-on {
+    from {
+        justify-content: center;
+        width: 50px;
+        background-color: white;
+        color: black;
+    }to{
+        width:100px;
+        justify-content: normal;
+        background-color: #3b82f6;
+        color: white;
+        
+    }
+}
+
+@keyframes switch-navigation-off {
+    from {
+        width:100px;
+        justify-content: normal;
+        background-color: #3b82f6;
+        color: white;
+        
+    }to{
+        
+        justify-content: center;
+        width: 50px;
+        background-color: white;
+        color: black;
+
+    }
+}
+.swith-navigation-on {
+    animation: switch-navigation-on 1s forwards;
+}
+
+.swith-navigation-off {
+    /* animation: switch-navigation-off 0s forwards; */
+    justify-content: center;
+    width: 50px;
+    background-color: white;
+    color: black;
+}

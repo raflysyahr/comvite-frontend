@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* @import './animation.css'; */
+
+input:focus{
+  outline:none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+h3{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align:left;
+}
+
+.wrap-word-animate { word-break: break-word;  }
+
+/* Blink cursor animation */
+@keyframes blink {
+  from{
+      border-color:transparent;
+  }to{
+    @layer .text-gray-500;
+  }
+  
+}
+
+.blink {
+  animation :blink   1s  cubic-bezier(0, -0.16, 0.79, 0.42) infinite;
+/*  animation-delay:1s;*/
+}
+
+.dark .dark\:react-loading-skeleton:after{
+	background-image:linear-gradient(90deg,#4d51643d,rgb(87 97 111),rgb(75 85 99 / 40%)) !important;
+}
+
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.animate__tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+.hover_animate__tada:hover {
+  -webkit-animation-name: tada;
+  animation: tada 1s forwards;
+
+}
+
+.no-event{
+  pointer-events:none;
+}
+
+.all-event{
+  pointer-events:all;
+}
+
+
+.hide-scrollbar::-webkit-scrollbar{
+  width:0px;
+  height: 0px;
+
+}
+
+.smooth-scrollbar::-webkit-scrollbar{
+  width:2px;
+  height: 5px;
+}
+
+.smooth-scrollbar::-webkit-scrollbar-thumb{
+  background-color: rgb(189, 189, 189);
+  border-radius: 10px;
+}
+/*.modern-scrollbar::-webkit-scrollbar{
+  width:10px;
+}*/
+
+
+.clip-mask{
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
